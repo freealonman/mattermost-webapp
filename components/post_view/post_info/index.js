@@ -8,6 +8,8 @@ import {getChannel} from 'mattermost-redux/selectors/entities/channels';
 import {get, getBool} from 'mattermost-redux/selectors/entities/preferences';
 import {getConfig} from 'mattermost-redux/selectors/entities/general';
 
+import {setCenterChannelDropdown} from 'actions/views/channel';
+
 import {Preferences} from 'utils/constants.jsx';
 
 import PostInfo from './post_info.jsx';
@@ -33,6 +35,7 @@ function mapDispatchToProps(dispatch) {
         actions: bindActionCreators({
             removePost,
             addReaction,
+            setCenterChannelDropdown,
         }, dispatch),
     };
 }

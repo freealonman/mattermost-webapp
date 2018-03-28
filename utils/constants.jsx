@@ -255,6 +255,8 @@ export const ActionTypes = keyMirror({
 
     INIT_WEBRTC: null,
     CLOSE_WEBRTC: null,
+
+    TOGGLE_CENTER_CHANNEL_DROPDOWN: null,
 });
 
 export const WebrtcActionTypes = keyMirror({
